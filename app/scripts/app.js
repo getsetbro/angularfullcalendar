@@ -13,7 +13,6 @@ angular.module('angularfullcalendarApp', [
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
     'ui.calendar'
   ])
   .config(function ($routeProvider) {
