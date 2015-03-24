@@ -1,0 +1,10 @@
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+test
+
+karma.conf.js
+
+karma-e2e.conf.js
