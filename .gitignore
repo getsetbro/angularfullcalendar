@@ -1,6 +1,5 @@
 node_modules
-.tmp
-.sass-cache
 test
+.tmp
 karma.conf.js
 karma-e2e.conf.js

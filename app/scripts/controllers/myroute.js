@@ -1,5 +1,5 @@
 'use strict';
-
+/*global moment:false */
 /**
  * @ngdoc function
  * @name angularfullcalendarApp.controller:MyrouteCtrl
@@ -8,113 +8,98 @@
  * Controller of the angularfullcalendarApp
  */
 angular.module('angularfullcalendarApp')
-.controller('MyrouteCtrl', function ($scope,$compile,uiCalendarConfig) {
-    var date = new Date();
-    var d = date.getDate();
-    var m = date.getMonth();
-    var y = date.getFullYear();
+//.controller('MyrouteCtrl', function ($scope,$compile,uiCalendarConfig) {
+.controller('MyrouteCtrl', function ($scope) {
+    //var date = new Date();
+    // var d = date.getDate();
+    // var m = date.getMonth();
+    // var y = date.getFullYear();
 
     /* event source that contains custom events on the scope */
-    $scope.events = [
-      {title: 'All Day Event',start: new Date(y, m, 1)},
-      {title: 'Long Event',start: new Date(y, m, d - 5),end: new Date(y, m, d - 2)},
-      {id: 999,title: 'Repeating Event',start: new Date(y, m, d - 3, 16, 0),allDay: false},
-      {id: 999,title: 'Repeating Event',start: new Date(y, m, d + 4, 16, 0),allDay: false},
-      {title: 'Birthday Party',start: new Date(y, m, d + 1, 19, 0),end: new Date(y, m, d + 1, 22, 30),allDay: false},
-      {type:'party',title: 'Lunch',start: new Date(y, m, d, 12, 0),end: new Date(y, m, d, 14, 0),allDay: false},
-      {type:'party',title: 'Lunch 2',start: new Date(y, m, d, 12, 0),end: new Date(y, m, d, 14, 0),allDay: false},
-      {type:'party',title: 'Click for Google',start: new Date(y, m, 28),end: new Date(y, m, 29),url: 'http://google.com/'}
-    ];
+    $scope.sessions = [{'title': 'Chang'},{'title': 'Raymond'},{'title': 'Bean'},{'title': 'Bright'},{'title': 'Sheppard'},{'title': 'Mcintosh'},{'title': 'Coffey'},{'title': 'Hubbard'},{'title': 'Berry'},{'title': 'Chan'},{'title': 'Ramsey'},{'title': 'Matthews'},{'title': 'Rios'},{'title': 'Whitney'},{'title': 'Campbell'},{'title': 'Gay'},{'title': 'Cohen'},{'title': 'Weaver'},{'title': 'Forbes'},{'title': 'Haynes'},{'title': 'Owens'},{'title': 'Ewing'},{'title': 'Kim'},{'title': 'Norris'},{'title': 'Waller'},{'title': 'Whitley'},{'title': 'Villarreal'},{'title': 'Trujillo'},{'title': 'Weber'},{'title': 'Scott'},{'title': 'Sullivan'},{'title': 'Bullock'},{'title': 'Thornton'},{'title': 'Camacho'},{'title': 'Mosley'},{'title': 'England'},{'title': 'Clarke'},{'title': 'Parsons'},{'title': 'Sandoval'},{'title': 'Lang'},{'title': 'Bass'},{'title': 'Patton'},{'title': 'Puckett'},{'title': 'Alvarez'},{'title': 'Robinson'},{'title': 'Weiss'},{'title': 'Gordon'},{'title': 'Hinton'},{'title': 'Hart'},{'title': 'Holloway'},{'title': 'Mcknight'},{'title': 'Wallace'},{'title': 'Maldonado'},{'title': 'Hancock'},{'title': 'Davidson'},{'title': 'Howe'},{'title': 'Jenkins'},{'title': 'Gaines'},{'title': 'Ingram'},{'title': 'Martinez'},{'title': 'Fuller'},{'title': 'Kelly'},{'title': 'Blake'},{'title': 'Sloan'},{'title': 'Frank'},{'title': 'Velasquez'},{'title': 'Hodges'},{'title': 'Becker'},{'title': 'Holcomb'},{'title': 'Walton'}];
 
+
+    var eStartDate='2015-10-01';
+    var eStartTime='T00:00:00';
+    var eEndDate='2015-10-09';
+    var eEndTime='T24:00:00';
+
+    var esd = moment(eStartDate);
+    var eed = moment(eEndDate);
+    var diffed = eed.diff(esd, 'days') + 1;
+    var events = [
+          {
+            //allDay:false,
+            //url:'string',
+            //color: //Sets an event's background and border color just like the calendar-wide eventColor option.
+            //backgroundColor: //Sets an event's background color just like the calendar-wide eventBackgroundColor option.
+            //borderColor: Sets an event's border color just like the the calendar-wide eventBorderColor option.
+            //textColor:'',
+            id: 'available',
+            title: 'eventConstraint',
+            start: eStartDate + eStartTime,
+            end: eEndDate + eEndTime,
+            rendering: 'background',
+            className: 'className'
+          },
+        ];
     //$scope.eventSources2 = [$scope.calEventsExt, $scope.eventsF, $scope.events];
-    $scope.eventSources2 = [$scope.events];
-
+    //$scope.eventSources2 = [$scope.events];
+    $scope.eventSources2 = [];
     /* config object */
     $scope.uiConfig = {
       calendar:{
-        droppable: true,
-        drop: function(date) {
-            console.log( 'Dropped on ' + date.format() );
-        },
-        height: 450,
+        //allDaySlot: true,
+        //slotDuration: '00:30:00',
+        //snapDuration:'00:30:00',
+        //scrollTime: '06:00:00',
+        //minTime: '00:00:00',
+        //maxTime: '24:00:00',
+        //lang: 'en',
+        //height: 'auto',
+        //contentHeight: 'auto',
+        //aspectRatio: 1.35, //initialize a calendar who's width is 1.35 its height
+        //timezone: 'local',
+        //now: '2013-12-01T00:00:00', //Explicitly sets the 'today' date normally highlighted in yellow.
         editable: true,
-        header:{
-          //left: 'month basicWeek basicDay agendaWeek agendaDay',
-          left: 'basicDay agendaDay agendaFourDay',
+        header: {
+          left: 'prev,next',
           center: '',
-          //right: 'today prev,next'
-          right: 'title'
+          right: 'eventAgenda,agendaWeek,agendaDay'
         },
-        //dayClick: $scope.alertEventOnClick,
-        eventClick: $scope.alertOnEventClick,
-        eventDrop: $scope.alertOnDrop,
-        eventResize: $scope.alertOnResize,
-        eventRender: $scope.eventRender,
-        defaultView: 'agendaFourDay',
+        defaultView:'eventAgenda',
+        defaultTimedEventDuration: '01:00:00',
+        droppable: true, // this allows things to be dropped onto the calendar
+        drop: function() {},
+        defaultDate:eStartDate, //The initial date displayed when the calendar first loads.
+        eventConstraint:'available',
+        events: events,
+
         views: {
-          basic: {// options apply to basicWeek and basicDay views
-          },
-          agenda: {// options apply to agendaWeek and agendaDay views
-          },
-          week: {// options apply to basicWeek and agendaWeek views
-          },
-          day: {// options apply to basicDay and agendaDay views
-          },
-          agendaFourDay: {
-            type: 'agenda',
-            duration: { days: 4 },
-            buttonText: '4 day'
-          }
-        }
+            eventAgenda: {
+              type: 'agenda',
+              duration: { days: diffed },
+              buttonText: 'event'
+            }
+            // ,zoom: {
+            //   type: 'agenda',
+            //   duration: { days: diffed },
+            //   buttonText: 'zoom',
+            //   slotDuration: '00:60:00'
+            // }
+        },
+        //,viewRender:function( view, element ){}//Triggered when a new date-range is rendered, or when the view type switches.
+        //,viewDestroy:function( view, element ){}//Triggered when a rendered date-range needs to be torn down.
+        //,dayRender:function( date, cell ) { }//A hook for modifying a day cell.
+        //// event is an Event Object that holds the event's information (date, title, etc).
+        //// jsEvent holds the native JavaScript event with low-level information such as mouse coordinates.
+        //// view holds the current View Object.
+        //,dayClick: function(date, jsEvent, view) {}
+        //,eventClick:function( event, jsEvent, view ) { }
+        //,eventMouseover:function( event, jsEvent, view ) { }
+        //,eventMouseout:function( event, jsEvent, view ) { }
+
       }
-    };
-
-    /* alert on eventClick */
-    $scope.alertOnEventClick = function( date, jsEvent, view){
-        $scope.alertMessage = (date.title + ' was clicked ');
-    };
-
-    /* alert on Drop */
-     $scope.alertOnDrop = function(event, delta, revertFunc, jsEvent, ui, view){
-       $scope.alertMessage = ('Event Droped to make dayDelta ' + delta);
-    };
-
-    /* alert on Resize */
-    $scope.alertOnResize = function(event, delta, revertFunc, jsEvent, ui, view ){
-       $scope.alertMessage = ('Event Resized to make dayDelta ' + delta);
-    };
-
-    /* add custom event*/
-    $scope.addEvent = function() {
-      $scope.events.push({
-        title: 'Open Sesame',
-        start: new Date(y, m, 28),
-        end: new Date(y, m, 29),
-        className: ['openSesame']
-      });
-    };
-
-    /* remove event */
-    $scope.remove = function(index) {
-      $scope.events.splice(index,1);
-    };
-
-    /* Change View */
-    $scope.changeView = function(view,calendar) {
-      uiCalendarConfig.calendars[calendar].fullCalendar('changeView',view);
-    };
-
-    /* Change View */
-    $scope.renderCalender = function(calendar) {
-      if(uiCalendarConfig.calendars[calendar]){
-        uiCalendarConfig.calendars[calendar].fullCalendar('render');
-      }
-    };
-
-     /* Render Tooltip */
-    $scope.eventRender = function( event, element, view ) {
-        element.attr({'tooltip': event.title,'tooltip-append-to-body': true});
-        $compile(element)($scope);
     };
 
 });

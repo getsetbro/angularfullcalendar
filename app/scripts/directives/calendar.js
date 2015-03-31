@@ -1,3 +1,5 @@
+'use strict';
+/*global $:false */
 /*
 *  AngularJs Fullcalendar Wrapper for the JQuery FullCalendar
 *  API @ http://arshaw.com/fullcalendar/
@@ -10,12 +12,7 @@
 
 angular.module('ui.calendar', [])
   .constant('uiCalendarConfig', {calendars: {}})
-  .controller('uiCalendarCtrl', ['$scope',
-                                 '$timeout',
-                                 '$locale', function(
-                                  $scope,
-                                  $timeout,
-                                  $locale){
+  .controller('uiCalendarCtrl', ['$scope','$timeout','$locale', function( $scope, $timeout, $locale){
 
       var sourceSerialId = 1,
           eventSerialId = 1,
@@ -46,7 +43,7 @@ angular.module('ui.calendar', [])
           e._id = eventSerialId++;
         }
         // This extracts all the information we need from the event. http://jsperf.com/angular-calendar-events-fingerprint/3
-        return "" + e._id + (e.id || '') + (e.title || '') + (e.url || '') + (+e.start || '') + (+e.end || '') +
+        return '' + e._id + (e.id || '') + (e.title || '') + (e.url || '') + (+e.start || '') + (+e.end || '') +
           (e.allDay || '') + (e.className || '') + extraEventSignature(e) || '';
       };
 
@@ -133,7 +130,8 @@ angular.module('ui.calendar', [])
             }
           }
 
-          var addedTokens = subtractAsSets(newTokens, oldTokens);
+          //var addedTokens = subtractAsSets(newTokens, oldTokens);
+          var addedTokens = subtractAsSets();
           for (i = 0, n = addedTokens.length; i < n; i++) {
             token = addedTokens[i];
             el = map[token];
@@ -142,7 +140,7 @@ angular.module('ui.calendar', [])
             }
           }
         };
-        return self = {
+        self = {
           subscribe: function(scope, onChanged) {
             scope.$watch(getTokens, function(newTokens, oldTokens) {
               if (!onChanged || onChanged(newTokens, oldTokens) !== false) {
@@ -154,6 +152,7 @@ angular.module('ui.calendar', [])
           onChanged: angular.noop,
           onRemoved: angular.noop
         };
+        return self;
       };
 
       this.getFullCalendarConfig = function(calendarSettings, uiCalendarConfig){
@@ -272,7 +271,8 @@ angular.module('ui.calendar', [])
         };
 
         eventSourcesWatcher.subscribe(scope);
-        eventsWatcher.subscribe(scope, function(newTokens, oldTokens) {
+        //eventsWatcher.subscribe(scope, function(newTokens, oldTokens) {
+        eventsWatcher.subscribe(scope, function() {
           if (sourcesChanged === true) {
             sourcesChanged = false;
             // prevent incremental updates in this case
@@ -280,7 +280,8 @@ angular.module('ui.calendar', [])
           }
         });
 
-        scope.$watch(getOptions, function(newO,oldO){
+        //scope.$watch(getOptions, function(newO,oldO){
+        scope.$watch(getOptions, function(){
             scope.destroy();
             scope.init();
         });

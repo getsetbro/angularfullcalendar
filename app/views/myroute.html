@@ -2,47 +2,49 @@
     <div class="">
         <div class="row">
             <div class="col-xs-4">
-                <p>Attach Angular objects to a calendar.</p>
-                <p>Show the data binding between two differnet calendars using the same event sources.</p>
-                <div class="btn-group calTools">
-                    <!-- <button class="btn" ng-click="changeLang()">{{changeTo}}</button> -->
-                    <!-- <button class="btn" ng-click="addRemoveEventSource(eventSources,eventSource)">Toggle Source</button> -->
-                    <button type="button" class="btn btn-primary" ng-click="addEvent()">Add Event</button>
+              <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Sessions</div>
+                <div class="panel-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Filter for..." ng-model="searchText"/>
+                        <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button></span>
+                    </div><!-- /input-group -->
                 </div>
-                <ul class="list-unstyled">
-                    <li ng-repeat="e in events">
-                        <div class="alert alert-info">
-                            <a class="close" ng-click="remove($index)">X</a>
-                            <b> <input ng-model="e.title"></b>
-                            {{e.start | date:"MMM dd"}} - {{e.end | date:"MMM dd"}}
+                    <!-- List group -->
+                <ul class="list-group" style="overflow:auto;height:400px">
+                    <!-- ngRepeat: e in sessions -->
+                    <li class="list-group-item" ng-repeat="e in sessions | filter:searchText" style="overflow:hidden">
+                        <div draggable class="list-group-item-text" data-event='{{$index + 1}}'>
+                          {{e.title}}
                         </div>
                     </li>
                 </ul>
-                <div class='alert alert-info js-draggable' data-event='1' data-duration='03:00' >drag me</div>
+              </div>
             </div>
             <div class="col-xs-8">
-                    <p>
-                      <button class="btn btn-xs" ng-click="changeView('month', 'myCalendar3')">Month</button>
-                      <button class="btn btn-xs" ng-click="changeView('agendaWeek', 'myCalendar3')">AgendaWeek</button>
-                      <button class="btn btn-xs" ng-click="changeView('agendaDay', 'myCalendar3')">AgendaDay</button>
-                      <button class="btn btn-xs" ng-click="changeView('agendaFourDay', 'myCalendar3')">agendaFourDay</button>
-                    </p>
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a data-target="#t1" role="tab" data-toggle="tab">Track 1</a></li>
+                <li role="presentation" class=""><a data-target="#t2" role="tab" data-toggle="tab">Track 2</a></li>
+                <li role="presentation" class=""><a data-target="#t3" role="tab" data-toggle="tab">Track 3</a></li>
+              </ul>
+              <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="t1">
+                    <div class="calendar" ng-model="eventSources2" calendar="myCalendar1" ui-calendar="uiConfig.calendar"></div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="t2">
+                    <div class="calendar" ng-model="eventSources2" calendar="myCalendar2" ui-calendar="uiConfig.calendar"></div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="t3">
                     <div class="calendar" ng-model="eventSources2" calendar="myCalendar3" ui-calendar="uiConfig.calendar"></div>
-                    <div class="alert-success calAlert" ng-show="alertMessage != undefined && alertMessage != ''">
-                        <h4>{{alertMessage}}</h4>
-                    </div>
-
-
+                  </div>
+              </div>
             </div>
         </div>
     </div>
 </section>
 
-
 <script>
-  $('.js-draggable').draggable({
-    //revert: true,      // immediately snap back to original position
-    //revertDuration: 0  //
-  });
+
 </script>
 
