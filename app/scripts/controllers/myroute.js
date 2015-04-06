@@ -1,5 +1,7 @@
 /*global moment:false */
 /*global $:false */
+
+
 /**
  * @ngdoc function
  * @name angularfullcalendarApp.controller:MyrouteCtrl
@@ -8,8 +10,8 @@
  * Controller of the angularfullcalendarApp
  */
 angular.module('angularfullcalendarApp')
-//.controller('MyrouteCtrl', function ($scope,$compile) {
-.controller('MyrouteCtrl', function ($scope, uiCalendarConfig) {
+//.controller('MyrouteCtrl', function ($scope,$compile, uiCalendarConfig) {
+.controller('MyrouteCtrl', function ($scope) {
   'use strict';
 
     /* event source that contains custom events on the scope */
@@ -19,6 +21,12 @@ angular.module('angularfullcalendarApp')
     var eStartTime='T00:00:00';
     var eEndDate='2015-10-09';
     var eEndTime='T24:00:00';
+
+    $scope.tracks = [{title:'Track 1',defaultTrrackEventDuration: '00:60:00'}];
+    $scope.addATrack = function(){
+
+      $scope.tracks.push({title:'Track #',defaultTrrackEventDuration: '00:60:00'});
+    };
 
     var esd = moment(eStartDate);
     var eed = moment(eEndDate);
@@ -105,5 +113,16 @@ angular.module('angularfullcalendarApp')
   //.fullCalendar( 'clientEvents' [, idOrFilter ] ) -> Array
   //remove events
   //.fullCalendar( 'removeEvents' [, idOrFilter ] )
+
+
+          $scope.tabClick = function (e, num) {
+            console.log(num);
+            $('.js-navtab').removeClass('active');
+            $(this).addClass('active');
+            $('.js-tabpane').removeClass('active');
+            var $tabpane = $('.js-tabcontent').find('>div').eq(num);
+            $tabpane.addClass('active');
+            $tabpane.find('.calendar').fullCalendar('render');
+        };
 });
 /* EOF */

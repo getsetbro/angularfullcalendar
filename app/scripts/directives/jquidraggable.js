@@ -8,9 +8,9 @@
  */
 
 // This makes any element draggable
-// Usage: <div draggable>Foobar</div>
+// Usage: <div dragonfly>Foobar</div>
 angular.module('angularfullcalendarApp')
-.directive('draggable', function() {
+.directive('dragonfly', function() {
   return {
     //The link function is responsible for registering DOM listeners as well as updating the DOM.
     link: function(scope, element, attrs) {
@@ -20,7 +20,20 @@ angular.module('angularfullcalendarApp')
         helper:'clone',
         appendTo: 'body'
       });
-      element.data('event', {title: attrs.ttl, id: attrs.eid, stick: true});
+
+            //put data-attributes into the data event obj
+      var eventObj = {
+        stick: true,
+        title: attrs.ttl
+      };
+            //unique id
+            var timestamp = new Date().getUTCMilliseconds();
+            eventObj.id = attrs.eid || timestamp;
+            if (attrs.duration) {
+                eventObj.duration = attrs.duration;
+            }
+      element.data('event', eventObj);
+
     }
   };
 });
