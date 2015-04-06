@@ -12,17 +12,15 @@
 angular.module('angularfullcalendarApp')
 .directive('draggable', function() {
   return {
-    // A = attribute, E = Element, C = Class and M = HTML Comment
-    restrict:'A',
     //The link function is responsible for registering DOM listeners as well as updating the DOM.
-    //link: function(scope, element, attrs) {
-    link: function(scope, element) {
+    link: function(scope, element, attrs) {
       element.draggable({
         //revert: true,      // immediately snap back to original position
         //revertDuration: 0  //
         helper:'clone',
         appendTo: 'body'
       });
+      element.data('event', {title: attrs.ttl, id: attrs.eid, stick: true});
     }
   };
 });

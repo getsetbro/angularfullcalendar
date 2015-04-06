@@ -1,4 +1,4 @@
-<section id="directives-calendar" ng-controller="MyrouteCtrl">
+<section ng-controller="MyrouteCtrl">
     <div class="">
         <div class="row">
             <div class="col-xs-4">
@@ -15,7 +15,7 @@
                 <ul class="list-group" style="overflow:auto;height:400px">
                     <!-- ngRepeat: e in sessions -->
                     <li class="list-group-item" ng-repeat="e in sessions | filter:searchText" style="overflow:hidden">
-                        <div draggable class="list-group-item-text" data-event='{{$index + 1}}'>
+                        <div draggable class="list-group-item-text" data-ttl="{{e.title}}" data-eid="{{$index +1}}">
                           {{e.title}}
                         </div>
                     </li>
@@ -30,21 +30,16 @@
               </ul>
               <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active" id="t1">
-                    <div class="calendar" ng-model="eventSources2" calendar="myCalendar1" ui-calendar="uiConfig.calendar"></div>
+                    <div class="calendar" ng-model="events1" calendar="myCalendar1" ui-calendar="uiConfig.calendar"></div>
                   </div>
                   <div role="tabpanel" class="tab-pane" id="t2">
-                    <div class="calendar" ng-model="eventSources2" calendar="myCalendar2" ui-calendar="uiConfig.calendar"></div>
+                    <div class="calendar" ng-model="events2" calendar="myCalendar2" ui-calendar="uiConfig.calendar"></div>
                   </div>
                   <div role="tabpanel" class="tab-pane" id="t3">
-                    <div class="calendar" ng-model="eventSources2" calendar="myCalendar3" ui-calendar="uiConfig.calendar"></div>
+                    <div class="calendar" ng-model="events3" calendar="myCalendar3" ui-calendar="uiConfig.calendar"></div>
                   </div>
               </div>
             </div>
         </div>
     </div>
 </section>
-
-<script>
-
-</script>
-

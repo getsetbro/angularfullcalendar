@@ -1,5 +1,5 @@
-'use strict';
 /*global moment:false */
+/*global $:false */
 /**
  * @ngdoc function
  * @name angularfullcalendarApp.controller:MyrouteCtrl
@@ -8,16 +8,12 @@
  * Controller of the angularfullcalendarApp
  */
 angular.module('angularfullcalendarApp')
-//.controller('MyrouteCtrl', function ($scope,$compile,uiCalendarConfig) {
-.controller('MyrouteCtrl', function ($scope) {
-    //var date = new Date();
-    // var d = date.getDate();
-    // var m = date.getMonth();
-    // var y = date.getFullYear();
+//.controller('MyrouteCtrl', function ($scope,$compile) {
+.controller('MyrouteCtrl', function ($scope, uiCalendarConfig) {
+  'use strict';
 
     /* event source that contains custom events on the scope */
     $scope.sessions = [{'title': 'Chang'},{'title': 'Raymond'},{'title': 'Bean'},{'title': 'Bright'},{'title': 'Sheppard'},{'title': 'Mcintosh'},{'title': 'Coffey'},{'title': 'Hubbard'},{'title': 'Berry'},{'title': 'Chan'},{'title': 'Ramsey'},{'title': 'Matthews'},{'title': 'Rios'},{'title': 'Whitney'},{'title': 'Campbell'},{'title': 'Gay'},{'title': 'Cohen'},{'title': 'Weaver'},{'title': 'Forbes'},{'title': 'Haynes'},{'title': 'Owens'},{'title': 'Ewing'},{'title': 'Kim'},{'title': 'Norris'},{'title': 'Waller'},{'title': 'Whitley'},{'title': 'Villarreal'},{'title': 'Trujillo'},{'title': 'Weber'},{'title': 'Scott'},{'title': 'Sullivan'},{'title': 'Bullock'},{'title': 'Thornton'},{'title': 'Camacho'},{'title': 'Mosley'},{'title': 'England'},{'title': 'Clarke'},{'title': 'Parsons'},{'title': 'Sandoval'},{'title': 'Lang'},{'title': 'Bass'},{'title': 'Patton'},{'title': 'Puckett'},{'title': 'Alvarez'},{'title': 'Robinson'},{'title': 'Weiss'},{'title': 'Gordon'},{'title': 'Hinton'},{'title': 'Hart'},{'title': 'Holloway'},{'title': 'Mcknight'},{'title': 'Wallace'},{'title': 'Maldonado'},{'title': 'Hancock'},{'title': 'Davidson'},{'title': 'Howe'},{'title': 'Jenkins'},{'title': 'Gaines'},{'title': 'Ingram'},{'title': 'Martinez'},{'title': 'Fuller'},{'title': 'Kelly'},{'title': 'Blake'},{'title': 'Sloan'},{'title': 'Frank'},{'title': 'Velasquez'},{'title': 'Hodges'},{'title': 'Becker'},{'title': 'Holcomb'},{'title': 'Walton'}];
-
 
     var eStartDate='2015-10-01';
     var eStartTime='T00:00:00';
@@ -27,7 +23,7 @@ angular.module('angularfullcalendarApp')
     var esd = moment(eStartDate);
     var eed = moment(eEndDate);
     var diffed = eed.diff(esd, 'days') + 1;
-    var events = [
+    var constraint = [
           {
             //allDay:false,
             //url:'string',
@@ -43,9 +39,11 @@ angular.module('angularfullcalendarApp')
             className: 'className'
           },
         ];
-    //$scope.eventSources2 = [$scope.calEventsExt, $scope.eventsF, $scope.events];
-    //$scope.eventSources2 = [$scope.events];
-    $scope.eventSources2 = [];
+    $scope.events = [];
+    //$scope.eventSources = [$scope.events, $scope.eventSource, $scope.eventsF];
+    $scope.events1 = [];
+    $scope.events2 = [];
+    $scope.events3 = [];
     /* config object */
     $scope.uiConfig = {
       calendar:{
@@ -59,7 +57,7 @@ angular.module('angularfullcalendarApp')
         //height: 'auto',
         //contentHeight: 'auto',
         //aspectRatio: 1.35, //initialize a calendar who's width is 1.35 its height
-        //timezone: 'local',
+        timezone: 'local',
         //now: '2013-12-01T00:00:00', //Explicitly sets the 'today' date normally highlighted in yellow.
         editable: true,
         header: {
@@ -70,10 +68,11 @@ angular.module('angularfullcalendarApp')
         defaultView:'eventAgenda',
         defaultTimedEventDuration: '01:00:00',
         droppable: true, // this allows things to be dropped onto the calendar
-        drop: function() {},
+        //drop: function(moment, jqEvent, jqObj, calObj) {},
+        //drop: function() {},
         defaultDate:eStartDate, //The initial date displayed when the calendar first loads.
         eventConstraint:'available',
-        events: events,
+        events: constraint,
 
         views: {
             eventAgenda: {
@@ -87,7 +86,7 @@ angular.module('angularfullcalendarApp')
             //   buttonText: 'zoom',
             //   slotDuration: '00:60:00'
             // }
-        },
+        }
         //,viewRender:function( view, element ){}//Triggered when a new date-range is rendered, or when the view type switches.
         //,viewDestroy:function( view, element ){}//Triggered when a rendered date-range needs to be torn down.
         //,dayRender:function( date, cell ) { }//A hook for modifying a day cell.
@@ -102,5 +101,9 @@ angular.module('angularfullcalendarApp')
       }
     };
 
+  //get events
+  //.fullCalendar( 'clientEvents' [, idOrFilter ] ) -> Array
+  //remove events
+  //.fullCalendar( 'removeEvents' [, idOrFilter ] )
 });
 /* EOF */
