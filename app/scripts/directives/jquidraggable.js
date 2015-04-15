@@ -21,17 +21,17 @@ angular.module('angularfullcalendarApp')
         appendTo: 'body'
       });
 
-            //put data-attributes into the data event obj
+      //put data-attributes into the data event obj
       var eventObj = {
         stick: true,
         title: attrs.ttl
       };
-            //unique id
-            var timestamp = new Date().getUTCMilliseconds();
-            eventObj.id = attrs.eid || timestamp;
-            if (attrs.duration) {
-                eventObj.duration = attrs.duration;
-            }
+      //unique id
+      //var timestamp = new Date().getUTCMilliseconds();
+      //eventObj.id = attrs.eid || timestamp;
+      if (attrs.duration) {
+          eventObj.duration = attrs.duration;
+      }
       element.data('event', eventObj);
 
     }
