@@ -1,1 +1,94 @@
-<p>This is the about view.</p>
+<div class="">
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="">Start Date: </label>
+                {{eventStartDate}}
+            </div>
+            <div class="form-group">
+                <label for="">Start Time: </label>
+                {{eventStartTime}}
+            </div>
+            <div class="form-group">
+                <label for="">End Date: </label>
+                {{eventEndDate}}
+            </div>
+            <div class="form-group">
+                <label for="">End Time:</label>
+                {{eventEndTime}}
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="form-group">
+                <label for="">Tracks</label>
+                <ul>
+                <li ng-repeat="(k,v) in NLTtracks">
+                    {{k}}
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  <hr>
+
+    <div class="row">
+      <div class="col-xs-4">..
+      </div>
+      <div class="col-xs-8">
+        <button class="btn btn-default btn-sm pull-right" ng-click="toEStartDate()">Go to event start</button>
+          <ul class="nav nav-tabs" >
+              <li ng-repeat="(k,v) in NLTtracks" class="js-navtab" ng-class="{active: $first}">
+                  <a ng-click="tabClick($event, $index)">{{k}}</a>
+              </li>
+          </ul>
+          <div class="tab-content js-tabcontent">
+          <br>
+              <div ng-repeat="tp in NLTtracks" class="tab-pane js-tabpane" ng-class="{active: $first}">
+                  <div class="calendar" calendar="fCal{{$index}}" ui-calendar="uiConfig.calendar" ng-model="tp"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+</div>
+
+  <script type="text/ng-template" id="myModalContent.html">
+      <div class="modal-header">
+          <h3 class="modal-title">Details</h3>
+      </div>
+      <div class="modal-body">
+        Title: {{title}}<br/>
+        Grade: {{item.Grade}}<br/>
+        DefaultDuration: {{item.DefaultDuration}}<br/>
+        Description: {{item.Description}}<br/>
+        SessionAim: <span ng-bind-html="renderHTML(item.SessionAim)"></span><br/>
+        SessionPrework: <span ng-bind-html="renderHTML(item.SessionPrework)"></span><br/>
+        SessionPreworkTime: {{item.SessionPreworkTime}}<br/>
+        Track: {{item.Track}}
+
+        <div class="form-group">
+          <label>Room</label>
+          {{room}}
+        </div>
+
+        <label>Break Outs:</label>
+        <div class="row" ng-repeat="bo in breakouts">
+          <div class="col-sm-4">
+            {{bo.name}}
+          </div>
+          <div class="col-sm-4">
+            {{bo.facilitator}}
+          </div>
+          <div class="col-sm-4">
+            {{bo.location}}
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+          <button class="btn btn-primary" ng-click="ok()">OK</button>
+      </div>
+  </script>

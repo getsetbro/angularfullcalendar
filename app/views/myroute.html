@@ -1,9 +1,120 @@
 <div class="">
-    <a ng-href="#/myroute/details" class="btn btn-primary">Event Details</a>
-    <a ng-href="#/myroute/planner" class="btn btn-primary">Event Planner</a>
-    <a ng-href="#/myroute/sessions" class="btn btn-primary">Event Sessions</a>
-    <hr />
-    <div ui-view></div>
-    <hr>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label>Event Type</label>
+                <select class="form-control" ng-model="selectedType" ng-options="name for (name, value) in eventTypes"></select>
+            </div>
+            <div class="form-group">
+                <label for="">Start Date</label>
+                <input type="date" class="form-control" ng-model="eventStartDate"/>
+            </div>
+            <div class="form-group">
+                <label for="">Start Time</label>
+                <input type="text" class="form-control" ng-model="eventStartTime"/>
+            </div>
+            <div class="form-group">
+                <label for="">End Date</label>
+                <input type="date" class="form-control" ng-model="eventEndDate" />
+            </div>
+            <div class="form-group">
+                <label for="">End Tie</label>
+                <input type="text" class="form-control" ng-model="eventEndTime" />
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="form-group">
+                <label for="">Tracks</label>
+                <div ng-repeat="t in tracks" class="input-group">
+                    <input type="text" ng-model="t.title" class="form-control"/>
+                    <span class="input-group-btn">
+                    <button class="btn" type="button" ng-click="deleteTrack($index)">X</button>
+                  </span>
+                </div>
+                <button type="button" class="btn" ng-click="addATrack()">add a track</button>
+            </div>
+        </div>
+    </div>
+
+  <hr>
+
+    <div class="row">
+      <div class="col-xs-4">
+          <div class="panel panel-default">
+              <div class="panel-heading">Event Sessions</div>
+              <div class="panel-body">
+                  <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Filter for..." ng-model="searchText"/>
+                      <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button></span>
+                  </div>
+              </div>
+              <ul class="list-group" style="overflow:auto;height:400px">
+                  <li class="list-group-item" ng-repeat="e in sessions | filter:searchText" style="overflow:hidden">
+                      <span dragonfly class="list-group-item-text" data-ttl="{{e.Name}}">
+                          {{e.Name}}
+                      </span>
+                      <button class="btn btn-link" ng-click="e.show = !e.show">...more</button>
+                      <div ng-if="e.show">Other info: Owner {{e.Owner}}</div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="col-xs-8">
+        <button class="btn btn-default btn-sm pull-right" ng-click="toEStartDate()">Go to event start</button>
+          <ul class="nav nav-tabs" >
+              <li ng-repeat="tb in tracks" class="js-navtab" ng-class="{active: $first}">
+                  <a ng-click="tabClick($event, $index)">{{tb.title}}</a>
+              </li>
+          </ul>
+          <div class="tab-content js-tabcontent">
+              <div ng-repeat="tp in tracks" class="tab-pane js-tabpane" ng-class="{active: $first}">
+                  <div class="calendar calendar{{$index}}" ui-calendar="uiConfig.calendar" calendar="fCal{{$index}}" ng-model="thisUnUsed"></div>
+                  <button type="button" class="btn" ng-click="addSessions('calendar'+$index)">add sesssions</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+<a ui-sref="myroute.sessions">open sessions</a>
+<div ui-view></div>
 
 </div>
+
+  <script type="text/ng-template" id="myModalContent.html">
+      <div class="modal-header">
+          <h3 class="modal-title">{{title}}</h3>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Room</label>
+          <input type="text" class="form-control" ng-model="room" placeholder="Room"/>
+        </div>
+
+        <label>Break Outs:</label>
+        <div class="row" ng-repeat="bo in breakouts">
+          <div class="col-sm-5">
+              <div class="form-group">
+                <input type="text" class="form-control" ng-model="bo.name" placeholder="Name"/>
+              </div>
+          </div>
+          <div class="col-sm-5">
+              <div class="form-group">
+                <input type="text" class="form-control" ng-model="bo.facilitator" placeholder="Facilitator"/>
+              </div>
+          </div>
+          <div class="col-sm-2">
+              <div class="form-group">
+                <button type="button" class="btn btn-danger" ng-click="deleteBreakOut($index)">X</button>
+              </div>
+          </div>
+        </div>
+        <button type="button" class="btn" ng-click="addBreakOut()">Add a break out</button>
+
+      </div>
+      <div class="modal-footer">
+          <button class="btn btn-primary" ng-click="ok()">OK</button>
+          <button class="btn btn-danger" ng-click="delete()">Delete</button>
+          <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+      </div>
+  </script>

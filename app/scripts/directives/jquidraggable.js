@@ -32,6 +32,10 @@ angular.module('angularfullcalendarApp')
       if (attrs.duration) {
           eventObj.duration = attrs.duration;
       }
+
+      eventObj.backgroundColor = '#378006';
+      eventObj.borderColor = '#257e4a';
+      eventObj.className = 'SessionEvent';
       element.data('event', eventObj);
 
     }

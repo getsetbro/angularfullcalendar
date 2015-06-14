@@ -1,0 +1,636 @@
+{
+    "d": {
+        "results": [
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(1)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(1)",
+                    "etag": "\"8\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "5fc963e2-4c3d-4b90-92a5-0b7cbf4f825f",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Internal NLT Day 1 Opening",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-18T12:00:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(2)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(2)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "3f6878d0-0bb9-4759-9b2b-5d9394ff4ab2",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Leading at Achievement First",
+                    "SessionPreworkTime": 20
+                },
+                "EventDate": "2015-05-18T12:30:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(3)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(3)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "deaf1408-4fe3-4215-90d2-a2abf201c4b4",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Welcome to Management",
+                    "SessionPreworkTime": 15
+                },
+                "EventDate": "2015-05-18T14:15:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(4)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(4)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "6431ae8f-f762-4d59-b41f-82566b320371",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "D&I Leading Across Difference",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-18T16:15:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(5)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(5)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "0eb1f722-9e9c-4a16-a7eb-73ccb2777923",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Vision of Excellence for our Roles",
+                    "SessionPreworkTime": 20
+                },
+                "EventDate": "2015-05-18T18:00:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(6)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(6)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "047179ee-f028-4c7c-a7cf-ca00e9ae2fe3",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Real Time Coaching",
+                    "SessionPreworkTime": 20
+                },
+                "EventDate": "2015-05-19T12:30:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(7)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(7)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "05e4fdba-d430-4100-bc0b-232a32801fea",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Observation & Feedback",
+                    "SessionPreworkTime": 0
+                },
+                "EventDate": "2015-05-19T16:15:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(8)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(8)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "1330b09a-1ab4-41af-b342-28c989ef56b0",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Special Services @ AF",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-20T12:30:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(9)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(9)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "840e5607-1982-4045-86e5-90a3d838307b",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Taxonomy:  Precise Directions",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-20T14:15:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(10)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(10)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "bc3a7291-f90a-4ba7-923f-8404e0ed7f36",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Taxonomy: Narration",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-20T16:15:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(11)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(11)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "99e482b5-e273-41be-9fca-9b66079f45cf",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Taxonomy:  Strong Voice",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-20T18:00:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(12)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(12)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "15b2b188-5c0d-408a-bdd3-fa2245c27e6d",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "People Leadership, Part 1",
+                    "SessionPreworkTime": 10
+                },
+                "EventDate": "2015-05-21T12:30:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(13)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(13)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "f9d04c21-c7e5-4096-bb0d-007d3564a597",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "People Leadership, Part 2",
+                    "SessionPreworkTime": 0
+                },
+                "EventDate": "2015-05-21T14:15:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(14)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(14)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "a356223a-5484-421e-9a3d-0ccb2b08c259",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Designing & Facilitating PD, Part 1",
+                    "SessionPreworkTime": 20
+                },
+                "EventDate": "2015-05-21T16:15:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(15)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(15)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "1dd17484-ec03-42fd-8e1f-2db736ed04cc",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Designing & Facilitating PD, Part 2",
+                    "SessionPreworkTime": 20
+                },
+                "EventDate": "2015-05-21T18:00:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(16)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(16)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "fb9aa688-7424-48de-bcc2-deb717d02935",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Academic Accomodations:  Pitching to the Top 5% & Getting All Students There",
+                    "SessionPreworkTime": 10
+                },
+                "EventDate": "2015-05-22T12:30:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(17)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(17)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "bf8fc162-c5da-4a57-8716-7f884ae98640",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Co-Teaching Basics/Coaching Two Teachers",
+                    "SessionPreworkTime": 0
+                },
+                "EventDate": "2015-05-22T14:15:00Z",
+                "Track": "AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(18)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(18)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "6f85eb52-fd75-441a-8909-9cf9a28aa008",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Common Picture Part 1",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-22T14:15:00Z",
+                "Track": "DOS"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(19)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(19)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "c1f56189-8860-435b-8cf8-f8da611e7297",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Personal Effectiveness in Your New Role",
+                    "SessionPreworkTime": 0
+                },
+                "EventDate": "2015-05-22T16:15:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(20)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(20)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "17861ea6-7af1-4b3f-96ca-48ea437c9ff2",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "The First 60 Days: Putting It All Together",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-22T18:00:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(21)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(21)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "d5d4be21-608e-4e45-bba9-724fd5b6a20b",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Common Picture",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-06-12T12:30:00Z",
+                "Track": "DOS"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(22)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(22)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "221bff23-fc1a-40e1-bbff-1ddea37d4a59",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Removal and Re-Entry",
+                    "SessionPreworkTime": 45
+                },
+                "EventDate": "2015-06-12T14:15:00Z",
+                "Track": "DOS"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(23)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(23)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "942c0093-d88f-4887-912d-deeda73b2d39",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Behavior Interventions and the CST",
+                    "SessionPreworkTime": 20
+                },
+                "EventDate": "2015-06-12T18:00:00Z",
+                "Track": "DOS, SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(24)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(24)",
+                    "etag": "\"5\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "7fbbcb43-8545-4a75-ade1-1a56f10a6095",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "The First 60 Days as a SSL Part 2",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-06-12T12:30:00Z",
+                "Track": "SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(25)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(25)",
+                    "etag": "\"10\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "cdf41fb8-6337-417b-809a-03f9cd53a2a0",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Internal NLT Day 1 Closing",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-18T19:30:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(26)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(26)",
+                    "etag": "\"8\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "97f38b0e-e00c-4e54-8c38-1295950d4b06",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Internal NLT Day 2 Opening",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-19T12:00:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(27)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(27)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "f3c96119-8874-467c-8608-1e9bb4288c29",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Internal NLT Day 2 Closing",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-19T19:30:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(28)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(28)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "59349de0-89dd-4e3b-add1-5ddec334dd52",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Internal NLT Day 3 Opening",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-20T12:00:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(29)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(29)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "f1f3c89b-4838-4095-99a1-1c45ec2b722a",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Internal NLT Day 3 Closing",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-20T19:30:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(30)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(30)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "d8f0ee04-8cf7-4abe-aee2-61ad5dc8a032",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Internal NLT Day 4 Opening",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-21T12:00:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(31)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(31)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "fd47ffe7-2923-4c1a-bb7f-436da802b9d6",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Internal NLT Day 4 Closing",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-21T19:30:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(32)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(32)",
+                    "etag": "\"7\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "97f81560-9423-4caf-ab0f-27eca46939fb",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Internal NLT Day 5 Opening",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-22T12:00:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(33)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(33)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "b8ffce44-4711-4df4-95d4-4af10f3af7b5",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Internal NLT Day 5 Closing",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-05-22T19:30:00Z",
+                "Track": "DOS,AD and SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(34)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(34)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "dc9e609f-5cf6-4739-8754-643f0316bb4e",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Internal NLT Day 6 Opening",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-06-12T12:00:00Z",
+                "Track": "DOS, SSL"
+            },
+            {
+                "__metadata": {
+                    "id": "Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(35)",
+                    "uri": "https://manyminds.achievementfirst.org/sites/NetworkSupport/TeamST/eventualtest/_api/Web/Lists(guid'032e4876-aaa6-461e-9c1d-fc638ae3fe3e')/Items(35)",
+                    "etag": "\"6\"",
+                    "type": "SP.Data.EventSessionsListItem"
+                },
+                "sessionID": {
+                    "__metadata": {
+                        "id": "9d82d51a-84bd-4bed-bae5-6eff2a223801",
+                        "type": "SP.Data.SessionsListItem"
+                    },
+                    "Title": "Internal NLT Day 6 Closing",
+                    "SessionPreworkTime": null
+                },
+                "EventDate": "2015-06-12T19:30:00Z",
+                "Track": "DOS, SSL"
+            }
+        ]
+    }
+}

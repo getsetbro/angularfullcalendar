@@ -4,14 +4,18 @@
     <meta charset="utf-8">
     <title>ui calendar</title>
     <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+<link rel="stylesheet" href="http://cloud.webtype.com/css/80ff008e-c37c-4cc9-9740-5881fd153bbf.css" />
+
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -71,6 +75,8 @@
     <script src="bower_components/jquery-ui/jquery-ui.js"></script>
     <script src="bower_components/ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -78,9 +84,11 @@
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
     <script src="scripts/controllers/myroute.js"></script>
+    <script src="scripts/controllers/myroute3.js"></script>
     <script src="calendar.min.js"></script>
     <script src="scripts/directives/jquidraggable.js"></script>
     <script src="scripts/directives/uiBsModal.js"></script>
     <!-- endbuild -->
+
 </body>
 </html>

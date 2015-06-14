@@ -14,4 +14,6 @@ angular.module('angularfullcalendarApp')
       'AngularJS',
       'Karma'
     ];
+    $scope.templateUrl = 'popoverhtml.html';
+    //$scope.template = 'qweewqrewqewrq';
   });
